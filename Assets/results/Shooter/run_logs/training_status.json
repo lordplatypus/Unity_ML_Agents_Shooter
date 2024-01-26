@@ -1,0 +1,29 @@
+{
+    "Shooter": {
+        "checkpoints": [
+            {
+                "steps": 50021,
+                "file_path": "results/Shooter/Shooter/Shooter-50021.onnx",
+                "reward": 1.0,
+                "creation_time": 1706155488.0391557,
+                "auxillary_file_paths": [
+                    "results/Shooter/Shooter/Shooter-50021.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 50021,
+            "file_path": "results/Shooter/Shooter.onnx",
+            "reward": 1.0,
+            "creation_time": 1706155488.0391557,
+            "auxillary_file_paths": [
+                "results/Shooter/Shooter/Shooter-50021.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.1.2+cu118"
+    }
+}
