@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Get Rigidbody2D
         bullet_rb = GetComponent<Rigidbody2D>();
     }
 
@@ -17,13 +18,13 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         if (this.transform.localPosition.y > 10)
-        {
+        { // Bullet went out of bounds
             HitObstacle();
         }
     }
 
     public void Fire_Bullet(Vector2 position)
-    {
+    { // Sets start point and velocity of the bullet
         gameObject.SetActive(true);
         can_be_fired = false;
         this.transform.localPosition = position;
@@ -31,7 +32,7 @@ public class Bullet : MonoBehaviour
     }
 
     public void HitObstacle()
-    {
+    { // Can this if bullet hits something or goes out of bounds, allows the bullet to be fired again
         can_be_fired = true;
         gameObject.SetActive(false);
     }
